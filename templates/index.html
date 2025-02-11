@@ -5,29 +5,18 @@
 <link rel="stylesheet" href="{{ get_url(path='index.css', trailing_slash=false) | safe }}"  /> 
 {% endblock head %}
 {% block content %}
-<main aria-label="Página inicial">
-    <header class="header">
-        <p class="header-logo">Thiago Campos</p>
-        <nav class="header-nav" aria-label="Menu de navegação principal">
-            <a href="/escritos">Escritos</a>
-            <a href="/liricos">Liricos</a>
-        </nav>
-    </header>
-    <section class="headline">
-        <h1 class="headline-title">
-            <svg class="headline-svg" height="50" width="50" xmlns="http://www.w3.org/2000/svg">
-                <circle r="20" cx="20" cy="30" fill="currentcolor"/>
-            </svg>  
-            Olá! Sou <b>Thiago Campos</b>, um engenheiro de software aficionado por 
-            design que reside nas belas paragens da Mantiqueira. <span>Minhas afinidades 
-            fazem-me crer que estar na interseção entre a tecnologia e as humanidades 
-            confere aos meus projetos um propósito que transcende a tecnologia como um 
-            mero fim em si mesma.</span>
-        </h1>
-    </section>
-    <footer class="footer">
-        <p class="footer-text">Feito no <b>Brasil</b></p>
-        {% include "partials/social.html" %}
+<main>
+    {% include "partials/header.html" %}
+    <h2>
+	Olá! Sou <b>Thiago Campos</b>, um engenheiro de software aficionado por 
+	design que reside nas belas paragens da Mantiqueira. Minhas afinidades 
+	fazem-me crer que estar na interseção entre a tecnologia e as humanidades 
+	confere aos meus projetos um propósito que transcende a tecnologia como um 
+	mero fim em si mesma.
+    </h2>
+    <footer>
+	<p>Feito no <b>Brasil</b></p>
+	{% include "partials/social.html" %}
     </footer>
 </main>
 {% endblock content %}

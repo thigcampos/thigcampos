@@ -1,22 +1,18 @@
 {% extends "base.html" %}
 
 {% block head %}
-<title>{{ page.title }} | Escritos</title>
+<title>{{ page.title }}</title>
 <meta name="description" content="{{ page.description }}" />
 <link rel="stylesheet" href="{{ get_url(path='article.css', trailing_slash=false) | safe }}" />
 {% endblock head %}
 
 {% block content %}
 <main>
-    {% include "partials/header.html" %}
     <article>
-        <h1 class="header-title">
-            {{ page.title }}
-        </h1>
-        {{ page.content | safe }}
-	<footer>
-            {% include "partials/license.html" %}
-	</footer>
+	<header>
+	    <a href="/">Voltar ao <i>Website</i></a>
+	</header>
+	{{ page.content | safe }}
     </article>
 </main>
 {% endblock content %}

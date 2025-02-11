@@ -1,37 +1,14 @@
-button, input[type="submit"], .button {
+button, input[type=submit], .button, .button-accent {
   display: block;
-  transition: .5s;
+  transition: 0.5s;
   width: fit-content;
-  border-radius: .5rem;
-  padding: .75rem 1rem;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
   text-decoration: none;
-  color: var(--label-primary);
-  font-size: var(--font-size-16);
-  background-color: var(--fill-primary-default);
 }
-
-button:hover, input[type="submit"]:hover, .button:hover {
-  background-color: var(--fill-primary-hover);
-}
-
-button:focus, input[type="submit"]:focus, .button:focus {
-  background-color: var(--fill-primary-hover);
-}
-
-.button-accent {
-  @extend .button;
-  color: var(--label-secondary);
-  background-color: var(--fill-accent-default);
-}
-
-.button-accent:focus, .button-accent:hover {
-  color: var(--label-secondary);
-  background-color: var(--fill-accent-hover);
-}
-
 
 @media only screen and (max-width: 768px) {
-  button, input[type="submit"], .button {
+  button, input[type=submit], .button, .button-accent {
     width: inherit;
     text-align: center;
   }

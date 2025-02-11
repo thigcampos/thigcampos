@@ -1,7 +1,5 @@
 :root {
-  --font-serif: "Junicode", ui-serif;
-  --font-sans-serif: Helvetica, ui-sans-serif;
-
+  --font-sans-serif: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", ui-sans-serif;
   --font-size-120: 7.5rem;
   --font-size-80: 5rem;
   --font-size-64: 4rem;
@@ -16,9 +14,7 @@
   --font-size-18: 1.125rem;
   --font-size-16: 1rem;
   --font-size-14: 0.875rem;
-
   --letter-spacing: -0.54px;
-
   --line-height-105: 105%;
   --line-height-150: 150%;
 }
@@ -42,44 +38,12 @@
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-serif);
-}
-
-p,
-span,
-a {
-  font-size: var(--font-size-20);
+body {
+  line-height: 1.45;
   font-family: var(--font-sans-serif);
 }
 
-a {
+main > header a {
+  color: inherit;
   text-decoration: none;
-  color: var(--label-accent);
-}
-
-a:hover,
-a:focus {
-  color: var(--label-accent-hover);
-}
-
-@font-face {
-  font-family: 'Junicode';
-  src: url('../fonts/Junicode/Junicode.woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: auto;
-}
-
-@font-face {
-  font-family: 'Junicode';
-  src: url('../fonts/Junicode/Junicode-Bold.woff2');
-  font-weight: 600;
-  font-style: normal;
-  font-display: auto;
 }

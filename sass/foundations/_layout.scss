@@ -1,5 +1,6 @@
 html, body {
   margin: 0;
+  height: 100%;
 }
 
 body {
@@ -10,8 +11,23 @@ body {
   background: var(--background-primary);
 }
 
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+header, footer {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media only screen and (max-width: 768px) {
   body {
-    padding: .75rem;
+    padding: 0.75rem;
+  }
+
+  header {
+    gap: 2rem;
+    flex-direction: column;
   }
 }
